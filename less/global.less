@@ -51,6 +51,17 @@ a.logo {
      background-color: @pastelle-red;
  }
 
+.btn-floating.waves-effect.waves-light.btn {
+    background-color: @pastelle-red;
+    .add-icon {
+        transition: all 0.2s linear;
+        &.open-scroll {
+            transform: rotate(45deg);
+            transition: all 0.2s linear;
+        }
+    }
+ }
+
  .col.padding-zero {
      padding: 0;
  }
@@ -74,18 +85,18 @@ a.logo {
 .card {
     .card-content {
         padding:15px;
-        transition: all 0.2s;
+        transition: all 0.2s linear;
         .material-icons.material-icons_transparent {
             position: absolute;
             top: 20px;
             left: 20px;
             color: transparent;
-            transition: color(@pastelle-red) 0.1s;
+            transition: all 0.2s linear;
         }
         &:hover {
             .material-icons.material-icons_transparent {
                 color: @pastelle-red;
-                transition: 0.2s;
+                transition: all 0.2s linear;
             }
         }
     }

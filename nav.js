@@ -8,3 +8,11 @@ $('.button-collapse').sideNav({
       draggable: true // Choose whether you can drag to open on touch screens
     }
   );
+
+$('.btn-floating').click( function() {
+    if ($('.add-icon').hasClass('open-scroll')) {
+        $('.add-icon').removeClass('open-scroll');
+    } else {
+        $('.add-icon').addClass('open-scroll');
+    }
+});
