@@ -16,7 +16,7 @@ body {
     color: @pastelle-red;
 }
 
-.material-icons_color {
+.material-icons.material-icons_color.material-icons_color.material-icons_color {
     color: @light-sand;
     margin-right: 15px;
 }
@@ -29,6 +29,10 @@ body {
      padding: 0;
  }
 
+ .col.padding-half {
+    padding: 0 0.375rem;
+ }
+
  .col.padding-left-zero {
      padding-left: 0;
  }
@@ -37,11 +41,20 @@ body {
      padding-right: 0;
  }
 
- .card {
-     .card-content {
-         padding:15px;
-     }
-     .card-action.card-action_padding {
-         padding: 15px;
-     }
- }
+.card {
+    .card-content {
+        padding:15px;
+        .material-icons.material-icons_transparent {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: transparent;
+            transition: color(@pastelle-red) 0.1s;
+        }
+        &:hover {
+            .material-icons.material-icons_transparent {
+                color: @pastelle-red;
+            }
+        }
+    }
+}
