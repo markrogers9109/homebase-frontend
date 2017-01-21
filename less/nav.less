@@ -1,14 +1,22 @@
 @import "color-scheme";
 
 nav.navigation {
-    background-color: @dark-gray-blue;
-    padding: 0 15px;
+    background-color: #2f3736;
+    padding: 0 30px;
     .navigation-container {
-        .nav-background {
-            background-color: @light-pastelle-blue;
+        .side-nav {
+            li {
+                .waves-effect {
+                    &:hover {
+                        color: @text-color-light;
+                        background-color: @pastelle-red;
+                    }
+                }
+            }
         }
         .hamburger-icon {
             display: block;
+            margin: 0;
         }
     }
 }
