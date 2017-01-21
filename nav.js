@@ -12,7 +12,9 @@ $('.button-collapse').sideNav({
 $('.btn-floating').click( function() {
     if ($('.add-icon').hasClass('open-scroll')) {
         $('.add-icon').removeClass('open-scroll');
+        $('.activity-overflow').removeClass('activity-scroll');
     } else {
         $('.add-icon').addClass('open-scroll');
+        $('.activity-overflow').addClass('activity-scroll');
     }
 });
