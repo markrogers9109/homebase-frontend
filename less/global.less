@@ -12,7 +12,11 @@ body {
     margin: 0;
 }
 
-.material-icons_logo {
+a.logo {
+    font-size: 20px;
+}
+
+.material-icons.material-icons_logo.material-icons_logo {
     color: @pastelle-red;
 }
 
@@ -44,6 +48,7 @@ body {
 .card {
     .card-content {
         padding:15px;
+        transition: all 0.2s;
         .material-icons.material-icons_transparent {
             position: absolute;
             top: 20px;
@@ -54,6 +59,7 @@ body {
         &:hover {
             .material-icons.material-icons_transparent {
                 color: @pastelle-red;
+                transition: 0.2s;
             }
         }
     }
