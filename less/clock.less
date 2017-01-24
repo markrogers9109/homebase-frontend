@@ -22,6 +22,7 @@ h1 {
     display: flex;
     position: relative;
     justify-content: center;
+    padding: 25px;
 }
 
 .centered {
@@ -32,8 +33,14 @@ h1 {
 }
 
 .center {
-    @extend .centered;
+    // @extend .centered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #918983;
+    position: absolute;
+    top: 105px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -96,14 +103,22 @@ h1 {
     background-color: #fff;
     border-radius: 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     box-shadow: -1px 10px 16px 9px rgba(0, 0, 0, 0.27);
 
     .inner {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
-        @extend .centered;
-        //box-shadow:1px 1px 1px 1px rgba(0,0,0,0.1);
+        margin: auto;
+        // @extend .centered;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow:1px 1px 1px 1px rgba(0,0,0,0.1);
         background-image: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 95%);
         border: 1px solid rgba(0, 0, 0, 0.05);
     }
@@ -111,9 +126,9 @@ h1 {
     .hand {
         position: absolute;
         bottom: 50%;
-        left: 48%;
+        left: 48.5%;
         transform: translate(-50%);
-        border-bottom: 100px solid #67635A;
+        border-bottom: 80px solid #67635A;
         border-left: 3px solid transparent;
         border-right: 3px solid transparent;
         height: 0;
@@ -125,7 +140,7 @@ h1 {
             top: -3px;
             left: 2px;
             transform: rotate(2deg);
-            border-bottom: 103px solid rgba(103, 99, 90, 0.1);
+            border-bottom: 83px solid rgba(103, 99, 90, 0.1);
             border-left: 3px solid transparent;
             border-right: 3px solid transparent;
             height: 0;
@@ -136,19 +151,20 @@ h1 {
             z-index: 1;
             //transform:rotate(90deg);
             transform-origin: bottom;
-            border-bottom: 70px solid #67635A;
+            border-bottom: 55px solid #67635A;
             animation: time 216000s infinite linear;
 
             &:after {
-                border-bottom: 73px solid rgba(103, 99, 90, 0.1);
+                border-bottom: 58px solid rgba(103, 99, 90, 0.1);
             }
         }
 
         &.second {
             z-index: 3;
-            left: 50%;
+            top: 8%;
+            left: 49%;
             background-color: #EA8E75;
-            height: 108px;
+            height: 88px;
             width: 3px;
             transform-origin: bottom center;
             border: none;
