@@ -1,0 +1,136 @@
+// UNIVERSAL
+// NAV
+
+@import "color-scheme";
+
+.fixed-navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    nav.navigation-mobile {
+        background-color: #2f3736;
+        padding: 0 15px;
+
+        .navigation-container {
+            .col.nav-column_width {
+                width: 20%;
+                padding: 0;
+
+                .brand-logo_mobile {
+                    i.mdi {
+                        text-align: center;
+                        display: flex;
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
+
+                a {
+                    width: 100%;
+
+                    i.mdi {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .side-nav {
+                padding-top: 0.5rem;
+
+                li {
+                    .waves-effect {
+                        &:hover {
+                            color: @text-color-light;
+                            background-color: @pastelle-red;
+                        }
+                    }
+                }
+            }
+
+            .hamburger-icon {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+}
+
+#sidenav-overlay {
+    z-index: -1 !important;
+}
+
+// ALEXA
+
+.btn-floating.btn-large.waves-effect.waves-light.activate-alexa_btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: @pastelle-red;
+}
+
+// HOME
+
+.main-page_content {
+    padding-bottom: 64px;
+
+    .row {
+        margin-bottom: 0;
+    }
+
+    .card-content {
+        .responsive-img {
+            display: block;
+            margin: auto;
+            width: 25%;
+        }
+
+        .card-title {
+            display: block;
+            text-align: center;
+        }
+
+        .recent-activity_log {
+            span {
+                display: flex;
+                padding: 5px;
+
+                &.pastelle-red-text.pastelle-red-text.pastelle-red-text {
+                    color: @pastelle-red;
+                    padding: 2px 0 3px;
+
+                    &.pastelle-red-text.red-text_width {
+                        width: 100%;
+                    }
+                }
+
+                .material-icons.material-icons_color {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    .card-action {
+        display: flex;
+        justify-content: space-around;
+
+        &.card-space_between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a.white-text.white-text.white-text.white-text {
+            font-size: 18px;
+            margin-right: 0;
+            z-index: 0;
+        }
+    }
+}
+// CAMERAS
+// ACTIVITY
+// TEMP
+// SETTINGS
+// PROFILE

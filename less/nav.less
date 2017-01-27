@@ -3,9 +3,21 @@
 nav.navigation {
     background-color: #2f3736;
     padding: 0 30px;
+
     .navigation-container {
+        .brand-logo {
+            height: 64px;
+            line-height: 64px;
+            display: flex;
+            width: 42px;
+            .responsive-img {
+                width: 100%;
+            }
+        }
+
         .side-nav {
             padding-top: 0.5rem;
+
             li {
                 .waves-effect {
                     &:hover {
@@ -15,6 +27,7 @@ nav.navigation {
                 }
             }
         }
+
         .hamburger-icon {
             display: block;
             margin: 0;
