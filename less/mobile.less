@@ -1,15 +1,13 @@
 // UNIVERSAL
 // NAV
 
-@import "color-scheme";
-
 .fixed-navbar {
     position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 3;
-    max-height: 64px;
+    max-height: 56px; // 64PX ON SCREENS LAGER THAN 420PX
     overflow: hidden;
     transition: all 0.3s linear;
     &.show-submenu {
@@ -40,6 +38,7 @@
 
                     i.mdi {
                         text-align: center;
+                        font-size: 2.15rem;
                     }
                 }
             }
@@ -75,13 +74,32 @@
             text-align: center;
             a {
                 padding: 30px;
-                font-size: 32px;
+                font-size: 26px;
                 width: 50vw;
+                white-space: nowrap;
                 border: 1px solid white;
+                color: #2f3736;
                 i {
                     display: block;
                     padding: 5px;
                     font-size: 42px;
+                    color: @gray;
+                    .badge-activity {
+                        font-size: 14px;
+                        background-color: #DC3522;
+                        border-radius: 50%;
+                        display: flex;
+                        position: absolute;
+                        font-style: normal;
+                        align-content: flex-end;
+                        top: 23%;
+                        left: 51%;
+                        min-width: 20px;
+                        min-height: 20px;
+                        margin: 0;
+                        padding: 3px 3px 2px;
+                        color: white;
+                    }
                 }
             }
         }
@@ -108,17 +126,18 @@
     top: 0;
     right: 0;
     left: 0;
-    height: 0;
-    z-index: 0;
+    height: 75vh;
+    z-index: -1;
     background-color: transparent;
     opacity: 0;
-    transition: opacity 0.1s ease;
+    will-change: opacity;
+    transition: all 0.3s linear;
     &.activate {
-        height: 75vh;
         z-index: 2;
         background-color: #000000;
         opacity: 0.5;
-        transition: opacity 0.1s ease;
+        will-change: opacity;
+        transition: all 0.3s linear;
     }
 }
 
